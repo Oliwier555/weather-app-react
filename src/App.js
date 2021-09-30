@@ -47,8 +47,12 @@ const App = () => {
 
       display: flex;
       justify-content: center;
-      background-color: ${description === "Clouds" && "blue"};
-      background-color: ${description === "Thunderstorm" && "grey"};
+      background-image: ${description === "Clouds" &&
+      "url('https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80')"};
+      background-image: ${description === "Thunderstorm" &&
+      "url('https://images.unsplash.com/photo-1511149755252-35875b273fd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80')"};
+      background-repeat: no-repeat;
+      height: 100vh;
     `,
     city: css`
       color: blue;
